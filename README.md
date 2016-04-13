@@ -1,6 +1,7 @@
 # docker-how2
 
 Lightweight container for how2 to avoid the hassle of installing nodejs+npm on your system.
+It is automatically rebuilt every day.
 
 ## Usage
 
