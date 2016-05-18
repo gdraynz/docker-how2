@@ -12,6 +12,6 @@ docker run -it gdraynz/how2 decompress tar.gz
 
 A simple alias can set you up :
 ```bash
-alias how2='docker run -it gdraynz/how2'
+alias how2='docker run -it --rm gdraynz/how2'
 how2 decompress tar.gz
 ```
