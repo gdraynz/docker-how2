@@ -1,5 +1,8 @@
-FROM mhart/alpine-node
+FROM alpine:3.4
 
-RUN npm install -g how2 && npm cache clean
+RUN apk add --update bash nodejs && \
+    npm install -g how2 && \
+    npm cache clean && \
+    rm -rf /var/cache/apk/*
 
 ENTRYPOINT ["how2"]
