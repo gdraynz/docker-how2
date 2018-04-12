@@ -1,8 +1,8 @@
-FROM alpine:3.6
+FROM alpine:3.7
 
-RUN apk add --update bash nodejs && \
-    npm install -g how2 && \
-    npm cache clean && \
+RUN apk add --update nodejs && \
+    npm install -g how-2 && \
+    npm cache clean --force && \
     rm -rf /var/cache/apk/*
 
 ENTRYPOINT ["how2"]
